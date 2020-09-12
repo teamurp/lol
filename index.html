@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.question1 {
+			margin-right: auto;
+			margin-left: auto;
+			width: 1200px;
+			background-color: #b5b5b5;
+		}
+
+		.question2 {
+			margin-right: auto;
+			margin-left: auto;
+			width: 1200px;
+			background-color: #b5b5b5;
+			display: none;
+		}
+
+		.question3 {
+			margin-right: auto;
+			margin-left: auto;
+			width: 1200px;
+			background-color: #b5b5b5;
+			display: none;
+		}
+
+
+		.ans1 {
+			background: red;
+			width: 400px;
+		}
+
+		.ans2 {
+			background: #ffbf00;
+			width: 400px;
+		}
+
+		.ans3 {
+			background: green;
+			width: 400px;
+		}
+
+		.ans4 {
+			background: red;
+			width: 400px;
+		}
+
+		.ans5 {
+			background: #ffbf00;
+			width: 400px;
+		}
+
+		.ans6 {
+			background: green;
+			width: 400px;
+		}
+
+		.ans7 {
+			background: red;
+			width: 400px;
+		}
+
+		.ans8 {
+			background: #ffbf00;
+			width: 400px;
+		}
+
+		.ans9 {
+			background: green;
+			width: 400px;
+		}
+
+		.img {
+			width: 1200px
+		}
+	</style>
+
+</head>
+<body>
+	<div class="question1">
+		<h1 style="text-align: center; font-family: Albertus; color: white; text-shadow: 4px 4px 4px black">Сколько людей проживает на территории России?</h1>
+		<img src="1.jpg" class="img">
+		<div style="display: flex; width: 1200px; margin-right: auto; margin-left: auto">
+			<div class="ans1">
+				<h1 style="text-align: center; font-family: Albertus; color: white; text-shadow: 4px 4px 4px black">146 миллионов</h1>
+			</div>
+			<div class="ans2">
+				<h1 style="text-align: center; font-family: Albertus; color: white; text-shadow: 4px 4px 4px black">107 миллионов</h1>
+			</div>
+			<div class="ans3">
+				<h1 style="text-align: center; font-family: Albertus; color: white; text-shadow: 4px 4px 4px black">178 миллионов</h1>
+			</div>
+		</div>
+	</div>
+	<div class="question2">
+		<h1 style="text-align: center; font-family: Albertus; color: white; text-shadow: 4px 4px 4px black">К какому классу членистоногих относятся скорпионы?</h1>
+		<img src="3.jpg" class="img">
+		<div style="display: flex; width: 1200px; margin-right: auto; margin-left: auto">
+			<div class="ans4">
+				<h1 style="text-align: center; font-family: Albertus; color: white; text-shadow: 4px 4px 4px black">Насекомые</h1>
+			</div>
+			<div class="ans5">
+				<h1 style="text-align: center; font-family: Albertus; color: white; text-shadow: 4px 4px 4px black">Ракообразные</h1>
+			</div>
+			<div class="ans6">
+				<h1 style="text-align: center; font-family: Albertus; color: white; text-shadow: 4px 4px 4px black">Паукообразные</h1>
+			</div>
+		</div>
+	</div>
+	<div class="question3">
+		<h1 style="text-align: center; font-family: Albertus; color: white; text-shadow: 4px 4px 4px black">В каком году был создан Google?</h1>
+		<img src="2.jpg" class="img">
+		<div style="display: flex; width: 1200px; margin-right: auto; margin-left: auto">
+			<div class="ans7">
+				<h1 style="text-align: center; font-family: Albertus; color: white; text-shadow: 4px 4px 4px black">1993</h1>
+			</div>
+			<div class="ans8">
+				<h1 style="text-align: center; font-family: Albertus; color: white; text-shadow: 4px 4px 4px black">2007</h1>
+			</div>
+			<div class="ans9">
+				<h1 style="text-align: center; font-family: Albertus; color: white; text-shadow: 4px 4px 4px black">1998</h1>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		//код на 1 вопрос
+		document.querySelector('.ans2').onclick = function() {
+			alert('Неправильно!');
+		}
+		document.querySelector('.ans3').onclick = function() {
+			alert('Неправильно!');
+		}
+		document.querySelector('.ans1').onclick = function() {
+			alert('Правильно!');
+			document.querySelector('.question1').style.display = 'none';
+			document.querySelector('.question2').style.display = 'block';
+		}
+		//код на 2 вопрос
+		document.querySelector('.ans4').onclick = function() {
+			alert('Неправильно!');
+		}
+		document.querySelector('.ans5').onclick = function() {
+			alert('Неправильно!');
+		}
+		document.querySelector('.ans6').onclick = function() {
+			alert('Правильно!');
+			document.querySelector('.question2').style.display = 'none';
+			document.querySelector('.question3').style.display = 'block';
+		}
+		//код на 3 вопрос
+		document.querySelector('.ans7').onclick = function() {
+			alert('Неправильно!');
+		}
+		document.querySelector('.ans8').onclick = function() {
+			alert('Неправильно!');
+		}
+		document.querySelector('.ans9').onclick = function() {
+			alert('Правильно!');
+			document.querySelector('.question3').style.display = 'none';
+			document.querySelector('.question1').style.display = 'block';
+		}
+	</script>
+	
+</body>
+</html>
